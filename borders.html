@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vakıfbank</title>
+
+    <style>
+      .kutu {
+        /* tam yuvarlak olmasi icin width ve height degerlerinin esit olmasi
+        gerekir */
+        width: 150px;
+        height: 150px;
+        background: cadetblue;
+        margin: 20px;
+        padding: 20px;
+      }
+      #kutu1 {
+        /* solid borderin seklini ifade eder */
+        border: 4px solid violet;
+        /* border-radius borderin kenarlarini yumusatir piksel 
+        değeride verebiliriz, yüzde vererek (örneğin 50%) yuvarlak
+        yapılır
+         */
+        border-radius: 50%;
+      }
+      #kutu2 {
+        /* sadece belli bir kismada border ekleyebiliriz */
+        border-top: 3px solid red;
+        border-right-style: dotted;
+      }
+      #kutu3 {
+        /* border ozelliklerini yan yana verebildigimiz gibi bu sekilde
+        tek tek de verebiliriz,
+        border-width border kalınlığı */
+        border-width: 5px;
+        border-style: dashed;
+        border-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kutu" id="kutu1">Kutu 1</div>
+    <div class="kutu" id="kutu2">Kutu 2</div>
+    <div class="kutu" id="kutu3">Kutu 3</div>
+  </body>
+</html>
